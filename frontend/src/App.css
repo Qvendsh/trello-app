@@ -1,0 +1,62 @@
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list {
+  width: 20vw;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 10px;
+}
+
+.cards {
+  width: 100%;
+  margin: 10px;
+  min-height: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #cecdcd;
+  border-radius: 10px;
+  cursor: grab;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  color: white;
+  cursor: pointer;
+}
+
+.delete-button {
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .list {
+    width: 100%;
+  }
+
+  .card {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  .add-button {
+    font-size: 1.2rem;
+  }
+
+  .delete-button {
+    font-size: 1rem;
+  }
+}
